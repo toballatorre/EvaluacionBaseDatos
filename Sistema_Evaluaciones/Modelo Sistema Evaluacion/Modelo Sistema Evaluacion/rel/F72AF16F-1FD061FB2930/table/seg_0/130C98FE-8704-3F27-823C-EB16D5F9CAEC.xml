@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="130C98FE-8704-3F27-823C-EB16D5F9CAEC" name="ESTUDIANTE">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>25D6E687-15AC-7CCA-C62C-E4ED38D6B442</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EST_ID" id="DF73B3DF-62F5-61B7-3FD7-069965AFCB6F">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del estudiante]]></commentInRDBMS>
+<generatorID>226EBD84-3F89-5CB8-5A95-C9172962B369</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_NOMBRE" id="F20201E4-1572-E723-4458-7C67755A4B5B">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primer nombre del estudiante]]></commentInRDBMS>
+<generatorID>229C85F6-6329-024F-4358-E4C2924524E4</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_APELLIDO" id="7BE8E3DD-A349-C81D-26D6-FD521769DD7C">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apellido del estudiante]]></commentInRDBMS>
+<generatorID>C511DC84-3A1A-C1B2-2030-0A75BD9D7F13</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1516DB1C-03E1-E297-4373-5C51D1343B03" name="ESTUDIANTE_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>ED9DDE41-F0C7-0118-72B5-890667ED427A</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF73B3DF-62F5-61B7-3FD7-069965AFCB6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

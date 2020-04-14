@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0FD9A49-E1B1-DACF-A7B2-C0A3B808F577" name="ASIGN_TEST">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>0AE80489-F43F-E014-C358-22DADDBB151F</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ASIGN_T_ID" id="38684B5F-83B8-1679-6AB6-D5E18DF58E46">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>6A5CE593-CE00-2E14-1A5B-8C4B869C3BDD</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_ID" id="89E35D43-4A75-B501-5F8C-FB85377944AD">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>E3333F4A-7C83-56A9-10DA-4E154A650402</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="602BFA00-4724-A038-7C7C-4933561CFE72" referredColumn="DF73B3DF-62F5-61B7-3FD7-069965AFCB6F"/>
+</associations>
+</Column>
+<Column name="TEST_ID" id="B872AF39-192B-260E-A8D3-D30CC32FEE76">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>BFD68D6A-523D-4644-A890-6853A111E0BB</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49AB1ACF-2B38-4746-13F0-922B363E2965" referredColumn="1AFFB15F-6430-71C4-CCDB-29C28F031269"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99B06DF0-9B83-D6C0-B423-90ED8A1B218C" name="ASIGN_TEST_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>BF37E673-B06C-AEB5-8F0B-386169318CD7</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38684B5F-83B8-1679-6AB6-D5E18DF58E46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="406C2D9F-B28A-D171-5E72-B40E3D74B123" name="ASIGN_TEST_ESTUDIANTE_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>5BDB76BC-9C91-F7D9-710F-03C37C4C790C</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89E35D43-4A75-B501-5F8C-FB85377944AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82D77448-7F9D-0462-1C92-61C1549116D5" name="ASIGN_TEST_TEST_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>18C951BE-1BD6-4C59-606E-503E0916FA00</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B872AF39-192B-260E-A8D3-D30CC32FEE76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="002E72EF-1356-6D65-AC07-FFEEEADD8A6C" name="TEST_PREG">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:36:13 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TEST_PREG_ID" id="4B0FF0EA-A546-CD8B-55EA-46F19B619118">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:36:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de la asignacion de la pregunta con el test]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F45C89FB-B549-7440-1D85-0BD244BC2DDA" name="TEST_PREG PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:37:07 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B0FF0EA-A546-CD8B-55EA-46F19B619118</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

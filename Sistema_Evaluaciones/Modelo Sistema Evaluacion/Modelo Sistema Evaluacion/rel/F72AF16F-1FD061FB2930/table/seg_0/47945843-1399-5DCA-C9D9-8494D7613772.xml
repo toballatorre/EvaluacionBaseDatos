@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="47945843-1399-5DCA-C9D9-8494D7613772" name="AUTOR">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>3ACB0E0F-33C9-FC9C-3E70-FA0205E6800D</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AUT_ID" id="EE2765C4-6EBD-5A92-D1DD-6B974F9B73F1">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico del autor]]></commentInRDBMS>
+<generatorID>445BFE01-C8B2-FF4D-9D13-09EA1817F370</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUT_NOMBRE" id="57E5B0B9-9958-B6F5-8A3A-6D24545A0F4E">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del autor]]></commentInRDBMS>
+<generatorID>74BD6B44-BEFD-4919-B6E5-7679F866D1B9</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUT_APELLIDO" id="1BDA319E-99A0-EE01-E410-23B2C91A742C">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apellido del autor]]></commentInRDBMS>
+<generatorID>F469711D-685E-6442-3A53-F68CB9EF7619</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1248FA09-E663-357A-FE51-7A22099FB36A" name="AUTOR_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>7042129A-5C2A-B453-D825-15DBCAF6D159</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE2765C4-6EBD-5A92-D1DD-6B974F9B73F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

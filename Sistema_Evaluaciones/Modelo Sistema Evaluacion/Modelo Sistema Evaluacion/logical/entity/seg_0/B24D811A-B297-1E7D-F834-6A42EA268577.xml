@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B24D811A-B297-1E7D-F834-6A42EA268577" name="CURSO">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:25:12 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CURSO_ID" id="A4D93ABD-D097-9E76-604B-910A2E6964EB">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:25:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico del curso]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUR_NOMBRE" id="A0EC9CB1-E041-7B62-14DA-693013317F35">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:25:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del curso]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROG_ID" id="77969A87-A787-93C3-DEB3-97AFD07A833A">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:36:59 UTC</createdTime>
+<generatorID>A57C0116-54FC-07FF-5FFD-72455353CA29</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<referedAttribute>196C6062-6C74-8C49-EA59-A35F3C6FA392</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<preferredAbbreviation>PROG_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="770AD6AA-14EC-437D-FF7D-22538DAE291B" name="CURSO PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:36:20 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A4D93ABD-D097-9E76-604B-910A2E6964EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

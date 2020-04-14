@@ -1,0 +1,81 @@
+-- Cuantas evaluaciones por curso
+select cur_nombre, count(asign_t_id) as Cantidad_Evaluaciones from curso
+    inner join asign_curso using(curso_id)
+    inner join estudiante using(est_id)
+    left join asign_test using(est_id)
+group by cur_nombre;
+
+-- Cursos sin evaluaciones
+select cur_nombre as Cursos_sin_evaluaciones from curso
+    inner join asign_curso using(curso_id)
+    inner join estudiante using(est_id)
+    left join asign_test using(est_id)
+group by cur_nombre
+having count(asign_t_id) = 0;
+
+-- Deficiencia
+-- Sin preguntas
+select test_id, t_nombre from test
+    left join pregunta using(test_id)
+group by test_id, t_nombre
+    having count(preg_id) = 0 
+order by test_id;
+
+-- dos o menos alternativas
+create or replace force view vCantAlt as 
+select test_id, t_nombre, enunciado, count(alternativa.preg_id) as cantidad_alternativa
+from test
+    left join pregunta using(test_id)
+    left join alternativa on pregunta.preg_id = alternativa.preg_id
+group by test_id, t_nombre, enunciado
+order by test_id;
+
+select test_id, t_nombre as deficiente from vcantalt
+    where cantidad_alternativa < 3
+group by test_id, t_nombre ;
+
+-- si todas son correctas o son incorrecas
+
+create or replace force view vCantCorrectas as
+    select test_id, t_nombre, enunciado, 
+        count(alternativa.preg_id) as cantidad_alternativa, sum(alternativa.es_correcto) as cantidad_correctas
+    from test
+        left join pregunta using(test_id)
+        left join alternativa on pregunta.preg_id = alternativa.preg_id
+    group by test_id, t_nombre, enunciado
+    order by test_id;
+
+select test_id, t_nombre as deficiente from vcantcorrectas
+    where (cantidad_alternativa = cantidad_correctas OR cantidad_correctas = 0) OR cantidad_correctas IS null
+group by test_id, t_nombre;
+
+-- Alumnos por curso
+select cur_nombre, count(asign_c_id) as cantidad_alumnos from curso
+    inner join asign_curso using(curso_id)
+group by cur_nombre;
+
+-- Puntaje no normalizado
+create or replace force view vPuntajeSinNormalizar as
+    select est_id, est_nombre, est_apellido, 
+            (sum(puntaje * porcentaje) - (sum(puntaje)-sum(puntaje*porcentaje))/4) as P
+    from estudiante
+        inner join respuestas using(est_id)
+        inner join pregunta using(preg_id)
+        inner join alternativa using(preg_id) where respuesta = alt_letra
+    group by  est_id, est_nombre, est_apellido
+    order by est_id;
+
+create or replace force view vNotasAlumnos as
+    select est_id, est_nombre, est_apellido, ((((p - 0)*6)/125)+1) as nota
+    from vpuntajesinnormalizar;
+
+-- Alumnos que aprueban la evaluacion
+
+select * from vnotasalumnos where nota >= 4.0;
+
+-- Nota Promedio de los estudiantes de un curso determinado para evaluacion determinada
+
+select curso_id, curso.cur_nombre, AVG(nota) as promedio from curso
+    inner join asign_curso using(curso_id)
+    inner join vNotasAlumnos using(est_id) where curso_id = 1
+group by curso_id, curso.cur_nombre;

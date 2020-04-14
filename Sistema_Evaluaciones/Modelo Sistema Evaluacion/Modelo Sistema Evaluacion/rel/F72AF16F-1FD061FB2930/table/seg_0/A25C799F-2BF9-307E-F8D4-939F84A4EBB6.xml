@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A25C799F-2BF9-307E-F8D4-939F84A4EBB6" name="CURSO">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>B24D811A-B297-1E7D-F834-6A42EA268577</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CURSO_ID" id="F94FB7B1-AA43-11F1-C1E1-D5AFC5FE836F">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico del curso]]></commentInRDBMS>
+<generatorID>A4D93ABD-D097-9E76-604B-910A2E6964EB</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUR_NOMBRE" id="29462CE5-BEA3-81E2-CFA9-D9FF6580A8F4">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del curso]]></commentInRDBMS>
+<generatorID>A0EC9CB1-E041-7B62-14DA-693013317F35</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_ID" id="3AFB40C5-C04E-284C-F3E4-B8CBCB45E71F">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>77969A87-A787-93C3-DEB3-97AFD07A833A</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEB11247-7A3B-52C6-F9F3-7FC5E5A65AD3" referredColumn="A9F82B3D-0E4F-E125-BE15-3AC8608795BD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8127CFE9-F800-20C4-B9D9-FFA2CB708BC3" name="CURSO_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>770AD6AA-14EC-437D-FF7D-22538DAE291B</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F94FB7B1-AA43-11F1-C1E1-D5AFC5FE836F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16FDE80A-4127-845D-F7DE-E6D8873E1431" name="CURSO_PROGRAMA_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>A57C0116-54FC-07FF-5FFD-72455353CA29</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AFB40C5-C04E-284C-F3E4-B8CBCB45E71F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

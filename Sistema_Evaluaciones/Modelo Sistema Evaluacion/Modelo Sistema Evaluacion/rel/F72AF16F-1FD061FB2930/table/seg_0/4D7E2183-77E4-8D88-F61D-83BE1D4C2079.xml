@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D7E2183-77E4-8D88-F61D-83BE1D4C2079" name="ALTERNATIVA">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>1067D39D-B196-2FDA-BF09-BB1FD4304117</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ALT_ID" id="683FB359-E0C9-FB4D-3950-A56C7300C810">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico del de la alternativa]]></commentInRDBMS>
+<generatorID>6F12E5F3-9E65-9655-6FCC-02D803C16308</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALT_LETRA" id="A3084097-B84D-0494-5A23-50985C62F116">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>AD71A9D5-CE6F-5395-8157-FF68B7380E60</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="7C090D1F-EFE8-493C-5ED9-01F988128035">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripcion de la alternativa]]></commentInRDBMS>
+<generatorID>6C43CE44-2207-C6CB-D458-962124C35597</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_CORRECTO" id="35932135-39ED-0791-BCA0-FA2505478F0E">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[0: INCORRECTO
+1: CORRECTO]]></commentInRDBMS>
+<generatorID>4625AAFE-FB5D-A4EB-88EA-D8603DC80BF4</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORCENTAJE" id="8C202B1A-E673-4621-ED3E-FC46133855CF">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[el valor en porcentaje de la alternativa]]></commentInRDBMS>
+<generatorID>1A255FB3-2A2D-0D0C-1CD8-B1AEAD6B4625</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREG_ID" id="F2D3CF64-362F-2458-AE70-9CD8D3E78C4B">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>B40C738E-7D14-C6D0-F4AF-DEADB3B0BCD3</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1969170-26DD-B6FA-BF74-A8292FA76C29" referredColumn="496A2047-14B2-4A18-E5F8-8BCC3CD52CF5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="148C3AEE-1B3F-90AD-2403-CC6A9E1F26B6" name="ALTERNATIVA_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>775ACB79-FCC6-8A97-63BA-F1EA8BA678C8</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="683FB359-E0C9-FB4D-3950-A56C7300C810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFD316D7-A170-BCCE-2687-0B8FBEF5631F" name="ALTERNATIVA_PREGUNTA_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>DC79B6EC-5B36-B47E-0FB1-C1CF9CF5DC1A</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2D3CF64-362F-2458-AE70-9CD8D3E78C4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

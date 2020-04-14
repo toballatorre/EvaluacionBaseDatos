@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3ACB0E0F-33C9-FC9C-3E70-FA0205E6800D" name="AUTOR">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:47:53 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AUT_ID" id="445BFE01-C8B2-FF4D-9D13-09EA1817F370">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:48:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico del autor]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUT_NOMBRE" id="74BD6B44-BEFD-4919-B6E5-7679F866D1B9">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:49:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del autor]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUT_APELLIDO" id="F469711D-685E-6442-3A53-F68CB9EF7619">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:58:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apellido del autor]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7042129A-5C2A-B453-D825-15DBCAF6D159" name="AUTOR PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 17:50:50 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>445BFE01-C8B2-FF4D-9D13-09EA1817F370</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

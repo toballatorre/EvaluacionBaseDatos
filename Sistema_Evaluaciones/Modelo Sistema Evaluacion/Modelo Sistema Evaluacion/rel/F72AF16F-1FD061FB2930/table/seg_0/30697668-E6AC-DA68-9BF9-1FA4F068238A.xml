@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30697668-E6AC-DA68-9BF9-1FA4F068238A" name="ASIGN_CURSO">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>8C13F907-DF2D-DAB6-E36E-64CB398CD98C</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ASIGN_C_ID" id="886BC6FE-F87A-0236-AAD4-3F866EE58B56">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>3008E690-E351-1321-BF41-C0CD54AC2417</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_ID" id="B2BC9636-862D-BA2A-6AA7-29070C9EE508">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>52FD9EE2-A462-6612-2E49-0F9220FCD852</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCA01A23-1A8E-34EE-ECF4-452EB49E39AB" referredColumn="DF73B3DF-62F5-61B7-3FD7-069965AFCB6F"/>
+</associations>
+</Column>
+<Column name="CURSO_ID" id="927666B0-1192-7174-4E1D-6D7E55255CCA">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>89E52350-4ABB-B737-1524-9ACA03273398</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="598A83A1-8B52-EBEA-9C02-64EA87D07267" referredColumn="F94FB7B1-AA43-11F1-C1E1-D5AFC5FE836F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C00EF1D-8E75-8C2D-1CAC-587771EE32CA" name="ASIGN_CURSO_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>254C76FF-44C0-99FF-09DD-33B985E1EE17</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="886BC6FE-F87A-0236-AAD4-3F866EE58B56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A24BC914-838C-BF2B-03E7-69F53D09135B" name="ASIGN_CURSO_ESTUDIANTE_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>61EC1A62-043E-CCE5-10EF-062814D908AB</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2BC9636-862D-BA2A-6AA7-29070C9EE508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCE83E8E-66F1-0127-B02F-D09921F85D1C" name="ASIGN_CURSO_CURSO_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>575BC51C-A20C-8980-C4DC-B14CB78FFCC7</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="927666B0-1192-7174-4E1D-6D7E55255CCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

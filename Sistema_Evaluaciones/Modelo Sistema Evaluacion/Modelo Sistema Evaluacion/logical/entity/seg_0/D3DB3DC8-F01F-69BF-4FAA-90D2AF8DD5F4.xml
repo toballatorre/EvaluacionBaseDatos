@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3DB3DC8-F01F-69BF-4FAA-90D2AF8DD5F4" name="RESPUESTAS">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:42:48 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ASIGN_R_ID" id="4BFD2436-48A0-451E-14E5-C2CD6C84B2EE">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:42:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de la asigancion estudiante-test]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESPUESTA" id="6075B1A3-1E83-1293-129B-729A6A58F995">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-13 16:11:12 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EST_ID" id="D4FE6DA0-ABB3-EC2E-C695-B0A41D312F65">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:43:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK identificador del estudiante que se le asigna un test]]></commentInRDBMS>
+<generatorID>0784E7C1-A104-D650-6633-DBE0746E8326</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<referedAttribute>226EBD84-3F89-5CB8-5A95-C9172962B369</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EST_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="PREG_ID" id="19A691A2-C430-6580-E332-752C0A94ED10">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 18:18:07 UTC</createdTime>
+<generatorID>707AAF75-A6A4-8C3E-9DF4-59AAEAC4918D</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<referedAttribute>05E2B0CC-B0AC-FBDF-474D-B629452BA251</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PREG_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB3FF4C0-0D82-3818-5538-74B7D1EE8B8C" name="EST_TEST PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:43:25 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4BFD2436-48A0-451E-14E5-C2CD6C84B2EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

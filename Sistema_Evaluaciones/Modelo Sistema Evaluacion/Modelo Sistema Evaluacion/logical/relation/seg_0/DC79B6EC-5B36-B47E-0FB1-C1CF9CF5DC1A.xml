@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PREG_ALT" directorySegmentName="seg_0" id="DC79B6EC-5B36-B47E-0FB1-C1CF9CF5DC1A">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:52:10 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<sourcePk>5EED291E-E46E-04BF-706C-4570E9FE865E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>429597DA-4A85-07DE-4217-EAFC976DCD97</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1067D39D-B196-2FDA-BF09-BB1FD4304117</targetEntity>
+<transferable>true</transferable>
+</Relation>

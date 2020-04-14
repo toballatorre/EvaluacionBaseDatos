@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EST_ASIGNT" directorySegmentName="seg_0" id="0784E7C1-A104-D650-6633-DBE0746E8326">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 18:43:35 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<sourcePk>ED9DDE41-F0C7-0118-72B5-890667ED427A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>25D6E687-15AC-7CCA-C62C-E4ED38D6B442</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3DB3DC8-F01F-69BF-4FAA-90D2AF8DD5F4</targetEntity>
+<transferable>true</transferable>
+</Relation>

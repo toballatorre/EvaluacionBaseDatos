@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="429597DA-4A85-07DE-4217-EAFC976DCD97" name="PREGUNTA">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:51:23 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PREG_ID" id="05E2B0CC-B0AC-FBDF-474D-B629452BA251">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:51:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de la pregunta]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENUNCIADO" id="34138918-C5DB-F407-6B5B-F5D22E31500E">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:51:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripcion del enunciado]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PUNTAJE" id="240D82A0-DB05-AA83-E7C2-E5F6180ADD73">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:51:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[cuanto puntaje tiene la pregunta]]></commentInRDBMS>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEST_ID" id="3FAA1328-9E5E-0791-0B71-23ABDCC935C5">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:57:19 UTC</createdTime>
+<generatorID>ADD8B28B-FB08-F9C8-2F34-81A436A181CE</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<referedAttribute>87EDF52B-C8B7-8F4C-E767-F463867CF2E5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TEST_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5EED291E-E46E-04BF-706C-4570E9FE865E" name="PREGUNTAv1 PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-16 00:51:48 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>05E2B0CC-B0AC-FBDF-474D-B629452BA251</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

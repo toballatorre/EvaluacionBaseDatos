@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DECF6B7-C99A-0A04-C3A3-5892AA9C6A68" name="RESPUESTAS">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>D3DB3DC8-F01F-69BF-4FAA-90D2AF8DD5F4</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ASIGN_R_ID" id="ED75C91D-9294-3F4A-3BC4-F13927F4DF2A">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de la asigancion estudiante-test]]></commentInRDBMS>
+<generatorID>4BFD2436-48A0-451E-14E5-C2CD6C84B2EE</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESPUESTA" id="1D01431E-259A-D147-7D37-DC084518DCD6">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>6075B1A3-1E83-1293-129B-729A6A58F995</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_ID" id="0F2F7EC2-959C-2385-003C-87266864ADEB">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK identificador del estudiante que se le asigna un test]]></commentInRDBMS>
+<generatorID>D4FE6DA0-ABB3-EC2E-C695-B0A41D312F65</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7199CAD3-234B-6E83-B940-3D19DFED33AD" referredColumn="DF73B3DF-62F5-61B7-3FD7-069965AFCB6F"/>
+</associations>
+</Column>
+<Column name="PREG_ID" id="01EBF0ED-617B-BB6B-4876-7459B4FE987F">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>19A691A2-C430-6580-E332-752C0A94ED10</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="203C1238-65F2-3C0E-01FF-ECDFDD3EEF4D" referredColumn="496A2047-14B2-4A18-E5F8-8BCC3CD52CF5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B69AE90B-9514-A384-6D82-AFFAB837ABCD" name="RESPUESTAS_PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>AB3FF4C0-0D82-3818-5538-74B7D1EE8B8C</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED75C91D-9294-3F4A-3BC4-F13927F4DF2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EECE818-CF20-5009-56A3-EE7C8E2BFC06" name="RESPUESTAS_ESTUDIANTE_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>0784E7C1-A104-D650-6633-DBE0746E8326</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2F7EC2-959C-2385-003C-87266864ADEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4902D93B-7CC4-B6B4-AFFC-DAD424352C6F" name="RESPUESTAS_PREGUNTA_FK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 19:06:59 UTC</createdTime>
+<generatorID>707AAF75-A6A4-8C3E-9DF4-59AAEAC4918D</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01EBF0ED-617B-BB6B-4876-7459B4FE987F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

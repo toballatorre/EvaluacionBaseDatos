@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0AE80489-F43F-E014-C358-22DADDBB151F" name="ASIGN_TEST">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 18:19:23 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ASIGN_T_ID" id="6A5CE593-CE00-2E14-1A5B-8C4B869C3BDD">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 18:19:46 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EST_ID" id="E3333F4A-7C83-56A9-10DA-4E154A650402">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 18:20:19 UTC</createdTime>
+<generatorID>5BDB76BC-9C91-F7D9-710F-03C37C4C790C</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<referedAttribute>226EBD84-3F89-5CB8-5A95-C9172962B369</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>EST_ID</preferredAbbreviation>
+</Attribute>
+<Attribute name="TEST_ID" id="BFD68D6A-523D-4644-A890-6853A111E0BB">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 18:20:39 UTC</createdTime>
+<generatorID>18C951BE-1BD6-4C59-606E-503E0916FA00</generatorID>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<referedAttribute>87EDF52B-C8B7-8F4C-E767-F463867CF2E5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TEST_ID</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BF37E673-B06C-AEB5-8F0B-386169318CD7" name="EST_TEST PK">
+<createdBy>Cristobal L</createdBy>
+<createdTime>2020-03-22 18:19:43 UTC</createdTime>
+<ownerDesignName>Modelo Sistema Evaluacion</ownerDesignName>
+<engineerTo>
+<item key="F72AF16F-FD2C-765A-354C-1FD061FB2930" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6A5CE593-CE00-2E14-1A5B-8C4B869C3BDD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
